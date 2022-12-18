@@ -23,6 +23,7 @@ const routes: Routes = [
   path: 'ordenar',
   component: OrdenarComponent
 },
+
 {
   path: '**',
   redirectTo: ''
