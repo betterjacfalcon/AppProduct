@@ -1,0 +1,32 @@
+<div class="text-layout">
+    <h1>numerPipe y porcentaje</h1>
+    <p>
+        Pipes incluidos en angular - Usualmente en common module
+    </p>
+
+</div>
+
+<div class="p-grid">
+    <div class="p-col-4">
+        <p-card header="venta neta" subheader="the present year">
+            <i class="pi pi-dollar"></i>
+            {{ventaNeta|number:'1.2-2'}} <br>
+            <i class="pi pi-dollar"></i>
+            {{(ventaNeta +250000)|number:'1.2-2'}} <br>
+            <i class="pi pi-dollar"></i>
+            {{(ventaNeta +250000)|number:'1.4-4'}}
+        </p-card>
+    </div>
+    <div class="p-col-4">
+        <p-card header="venta bruta" subheader="the present year">
+            {{(ventaNeta +20000000000)| currency}} <br>
+            {{(ventaNeta +20000000000)| currency:'':'symbol-narrow'}} <br>
+            {{(ventaNeta +20000000000)| currency:'':'symbol-narrow':'1.4-4'}}
+        </p-card>
+    </div>
+    <div class="p-col-4">
+        <p-card header="porcentaje" subheader="the present year">
+            {{porcentaje | percent:'1.2-2'}} <br>
+        </p-card>
+    </div>
+</div>
